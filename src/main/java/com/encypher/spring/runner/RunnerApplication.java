@@ -1,8 +1,7 @@
 package com.encypher.spring.runner;
 
-import com.encypher.spring.runner.enterprise.MyWebController;
+import com.encypher.spring.runner.enterprise.webService.MyWebController;
 import com.encypher.spring.runner.game.GameRunner;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -16,12 +15,6 @@ public class RunnerApplication {
 
     public static void main(String[] args) {
       ConfigurableApplicationContext context = SpringApplication.run(RunnerApplication.class, args);
-
-
-//        PacManGame pacManGame = new PacManGame();
-//        GamingConsole game = new MarioGame();
-//        GameRunner runner = new GameRunner(game);
-
 
       GameRunner runner = context.getBean(GameRunner.class);
       runner.run();
