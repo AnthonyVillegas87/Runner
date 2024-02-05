@@ -18,7 +18,7 @@ This repository contains the test runner for RESTful and SOAP web services using
 - Spring Boot Actuator (Monitoring)
 - Swagger (Documentation)
 - Maven (dependencies management)
-- Eclipse (IDE)
+- IntelliJ (IDE)
 - Postman (REST Services Client)
 - Tomcat Embedded Web Server
 
