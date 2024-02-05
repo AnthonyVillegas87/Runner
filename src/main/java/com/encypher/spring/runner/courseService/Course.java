@@ -1,4 +1,4 @@
-package com.encypher.spring.runner;
+package com.encypher.spring.runner.courseService;
 
 public class Course {
     private long id;

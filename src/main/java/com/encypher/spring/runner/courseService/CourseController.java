@@ -1,5 +1,6 @@
-package com.encypher.spring.runner;
+package com.encypher.spring.runner.courseService;
 
+import com.encypher.spring.runner.courseService.Course;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,10 +14,10 @@ public class CourseController {
     public List<Course> retrieveCourses() {
         return Arrays.asList(
 
-               new Course(1, "English", "Heimer"),
-                new Course(2, "Math", "Bradberry")
-
-
+                new Course(1, "English", "Heimer"),
+                new Course(2, "Math", "Bradberry"),
+                new Course(3, "History", "Corona"),
+                new Course(4, "Economics", "Jay")
         );
     }
 
